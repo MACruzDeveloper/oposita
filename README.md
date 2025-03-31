@@ -1,6 +1,6 @@
-# Oposita test
+# Test
 
-> Prueba técnica
+> Prueba maquetación
 
 ## Env Setup
   - node: `22.12.0`
