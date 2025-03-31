@@ -1,0 +1,108 @@
+@use "sass:map";
+@use "../helpers/variables";
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: variables.$color1;
+  padding: 0 2rem;
+
+  &_flex {
+    min-height: map.get(variables.$header-height, 'small');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_logo {
+    margin-right: 4rem;
+  }
+
+  &_nav {
+    display: none;
+    @media (min-width: variables.$screenSm) {
+      display: block;
+    }
+
+    &--open {
+      display: block;
+      width: 50%;
+      position: absolute;
+      top: map.get(variables.$header-height, 'small');
+      right: 1rem;
+      z-index: 500;
+      background-color: variables.$color1;
+      border-top: 0.1rem solid variables.$color2;
+    }
+    
+    &_list {
+      @media (min-width: variables.$screenSm) {
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 1.6rem;
+        padding: 1.5rem 2rem;
+        text-decoration: none;
+        border-bottom: 0.3rem solid transparent;
+        @media (min-width: variables.$screenSm) {
+          min-height: map.get(variables.$header-height, 'medium');
+          padding: 0 1rem;
+          justify-content: flex-start;
+        }
+        @media (min-width: variables.$screenLg) {
+          padding: 0 2rem;
+        }
+
+        &:hover {
+          border-color: white;
+        }
+      }
+
+      .icon {
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &_mobile {
+    @media (min-width: variables.$screenSm) {
+      display: none;
+    }
+
+    .btn_nav {
+      color: white;
+    }
+  }
+
+  &_right {
+    display: none;
+    @media (min-width: variables.$screenSm) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+
+    .cta {
+      margin: 0 1rem;
+
+      .btn_test {
+        min-width: 11.5rem;
+        height: 4rem;
+      }
+    }
+
+    .user {
+      margin-left: 2rem;
+    }
+  }
+}

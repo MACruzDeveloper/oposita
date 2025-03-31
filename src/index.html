@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.opositatest.com/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titleHead }}</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="page home">
+        {{> header }}
+      
+        <main class="main">
+          <section class="intro">
+            <div class="container">
+              <div class="intro_flex flex">
+                <div class="intro_left">
+                  <p class="date">28.06.2022</p>
+                  <h1>Celebra este día tan especial</h1>
+                  <p class="desc">Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                  <p class="desc">Visita nuestros <a href="#" title="visita nuestros recursos gratuitos">recursos gratuitos</a></p>
+                </div>
+
+                <div class="intro_right">
+                  <div class="discount">
+                    <img src="{{route}}assets/images/descuentazo.svg" alt="descuentazo -20 en toda la web">
+                  </div>
+
+                  <button class="btn btn_primary btn_intro">Ir a la web de Oposita Test</button>
+                </div>
+              </div>
+
+              <div class="video">
+                <iframe src="https://www.youtube.com/embed/Td881w_denQ?si=aHGBdPN5BM25P_6G" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+
+          <section class="resources">
+            <div class="container">
+              <div class="resources_top">
+                <h2 class="title">Además...<br>
+                  ¡Recursos gratuitos y sorteos!</h2>
+              </div>
+
+              <div class="resources_middle grid">
+                <div class="resources_middle-item">
+                  <p class="tit">Gana 1 año en opositaTest</p>
+                  <p class="desc">Ya tenemos los ganadores ¡gracias por participar!</p>
+                  <img src="{{route}}assets/images/resources1.jpg" alt="chica ganadora">
+                  <p class="soon">Proximamente</p>
+                </div>
+
+                <div class="resources_middle-item">
+                  <p class="tit">Gana 1 año en opositaTest</p>
+                  <p class="desc">Ya tenemos los ganadores ¡gracias por participar!</p>
+                  <img src="{{route}}assets/images/resources2.jpg" alt="chica haciendo test">
+                  <button class="btn btn_primary">Hacer test de conocimientos</button>
+                </div>
+
+                <div class="resources_middle-item">
+                  <p class="tit">Gana 1 año en opositaTest</p>
+                  <p class="desc">Ya tenemos los ganadores ¡gracias por participar!</p>
+                  <img src="{{route}}assets/images/resources3.jpg" alt="lupa">
+                  <button class="btn btn_primary">¡Acceder gratis!</button>
+                </div>
+
+                <div class="resources_middle-item resources_middle-item--big">
+                  <p class="tit">Gana 1 año en opositaTest</p>
+                  <p class="desc">Ya tenemos los ganadores ¡gracias por participar!</p>
+                  <img src="{{route}}assets/images/resources4.jpg" alt="chica escribiendo">
+                  <button class="btn btn_primary">Hacer test de conocimientos</button>
+                </div>
+
+                <div class="resources_middle-item resources_middle-item--big">
+                  <p class="tit">Gana 1 año en opositaTest</p>
+                  <p class="desc">Ya tenemos los ganadores ¡gracias por participar!</p>
+                  <img src="{{route}}assets/images/resources5.jpg" alt="chica bebiendo café">
+                  <button class="btn btn_primary">Acepto el desafío</button>
+                </div>
+              </div>
+
+              <div class="resources_bottom">
+                <ul class="list_social">
+                  <li>
+                    <a href="#" title="accede a facebook">
+                      <img src="{{route}}assets/images/icon-facebook.svg" alt="facebbok">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="accede a instagram">
+                      <img src="{{route}}assets/images/icon-instagram.svg" alt="instagram">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="accede a x">
+                      <img src="{{route}}assets/images/icon-x.svg" alt="x">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="skills">
+            <div class="container">
+              <div class="skills_flex flex">
+                <div class="skills_left">
+                  <div class="skills_item skills_item--featured">
+                    <h3 class="title">Qorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                    <p class="desc">Céntrate solo en estudiar, de todo lo demás se encarga OpositaTest, <strong>monitorea tu progreso, identifica áreas de mejora y compara tu rendimiento con otros usuarios de manera anónima.</strong> </p>
+                    <button class="btn btn_primary btn_free">Probar clase gratis</button>
+                  </div>
+                </div>
+
+                <div class="skills_right">
+                  <div class="skills_item skills_item--card">
+                    <h4 class="title">Qorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    <p class="desc">Céntrate solo en estudiar, de todo lo demás se encarga OpositaTest.</p>
+                  </div>
+
+                  <div class="skills_item skills_item--card">
+                    <h4 class="title">Qorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    <p class="desc">Céntrate solo en estudiar, de todo lo demás se encarga OpositaTest. </p>
+                  </div>
+
+                  <div class="skills_item skills_item--card">
+                    <h4 class="title">Qorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    <p class="desc">Céntrate solo en estudiar, de todo lo demás se encarga OpositaTest. </p>
+                  </div>
+
+                  <div class="skills_item skills_item--card">
+                    <h4 class="title">Qorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                    <p class="desc">Céntrate solo en estudiar, de todo lo demás se encarga OpositaTest. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="faq">
+            <div class="container">
+              <div class="faq_top">
+                <h3 class="title">Preguntas frecuentes</h3>
+              </div>
+
+              <div class="faq_content">
+                <div class="faq_content-item">
+                  <details open>
+                    <summary>¿Qué es el Día tan especial?</summary>
+                    <p>Este día es una celebración del tesón, paciencia y perseverancia de quienes opositáis. Hace dos años decidimos honrar vuestro esfuerzo en un día especial. <strong>Una jornada en la que festejar las incontables horas que pasáis delante del temario,</strong> a veces sin convocatoria de oposiciones a la vista. El día especial es la fecha en la que reconocemos y honramos vuestra dedicación y empeño por lograr un sueño: la plaza.</p>
+                  </details>
+                </div>
+
+                <div class="faq_content-item">
+                  <details open>
+                    <summary>¿Cuándo se celebra el Día del San Valentín?</summary>
+                    <p>El día de san valentín se celebra desde 2019 el último viernes de febrero. Esta fecha fue decidida, por unanimidad, entre los opositores que pertenecéis a la comunidad de OpositaTest. En votación abierta seleccionasteis este día para festejar todos juntos, la causa común de quienes opositan y sueñan con convertirse en funcionarios de la Administración Pública.</p>
+                  </details>
+                </div>
+
+                <div class="faq_content-item">
+                  <details open>
+                    <summary>¿Qué es el Día tan especial?</summary>
+                    <p>Este día es una celebración del tesón, paciencia y perseverancia de quienes opositáis. Hace dos años decidimos honrar vuestro esfuerzo en un día especial. Una jornada en la que festejar las incontables horas que pasáis delante del temario, a veces sin convocatoria de oposiciones a la vista.</p>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <img src="{{route}}assets/images/footer.jpg" alt="">
+        </footer>
+      </div>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

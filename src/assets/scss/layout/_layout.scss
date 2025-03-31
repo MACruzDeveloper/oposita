@@ -1,0 +1,57 @@
+@use "../helpers/variables";
+
+/* Resources */
+.flex {
+  @media (min-width: variables.$screenSm){
+    display: flex;
+  }
+}
+
+.grid {
+  @media (min-width: variables.$screenSm){
+    display: grid;
+  }
+}
+
+details summary {
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.list_social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > li {
+    margin: 0 1rem;
+
+    > a {
+      > img {
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        > img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
