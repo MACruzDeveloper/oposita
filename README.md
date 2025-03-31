@@ -8,7 +8,7 @@
 
 ## Commands
   - `npm install` para instalar todos los paquetes
-  - `npm run rundev` - Arranca el proyecto en modo desarrollo en: `localhost:5173` 
+  - `npm run dev` - Arranca el proyecto en modo desarrollo en: `localhost:5173` 
   - `npm run build` - Compila todo el código Frontend en la carpeta `/dist/`
 
 ## Code pattern
